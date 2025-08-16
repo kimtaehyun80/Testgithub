@@ -2,8 +2,8 @@ package org.example.Head02_OOPprogrammingStart.example04;
 
 public class VarargsExample {
     public static void main(String[] args) {
-        Example ex = new Example();
-        ex.print(1, 2);  // fixed two ints 호출
+        Example ex = new Example();  // Example클레스에 새로운 이그젬플 객체 생성해서 ex변수에 할당해라
+        ex.print(1, 2);  // fixed two ints 호출 , ex객체에 print메서드 호출해서 a b 값 전달
     }
 }
 
