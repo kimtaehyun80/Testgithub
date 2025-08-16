@@ -6,7 +6,7 @@ import java.util.List;
 public class ConstructorExample {
     public static void main(String[] args) {
         // 1. 기본 생성자 사용
-        Order order1 = new Order();
+        Order order1 = new Order(); // 오더클레스에 오더1객체 생성하는데 뉴오더값을 가진
         System.out.println("order1 ID: " + order1.getOrderId());
         System.out.println("order1 isPaid: " + order1.isPaid());
 
@@ -14,6 +14,7 @@ public class ConstructorExample {
         Order order2 = new Order("ORD001");
         System.out.println("order2 ID: " + order2.getOrderId());
         System.out.println("order2 product count: " + order2.getProducts().size());
+        //.size()는 개수 반환 이라는뜻 , 오더2객체의 프로덕츠목록의 개수를 반환해라 라는뜻
 
         if(order1.equals(order2)) {
             System.out.println("order1.equals(order2) : " + order1.equals(order2));
