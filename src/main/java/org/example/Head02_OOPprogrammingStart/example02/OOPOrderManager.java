@@ -14,6 +14,7 @@ class Order {
     }
 
     int getTotalPrice() {
+        // getter는 필드값에 접근해서 수정하기위한 메서드다. get은 값반환,set은 값설정
         return quantity * price;
     }
 
