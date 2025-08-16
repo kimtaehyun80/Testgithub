@@ -9,5 +9,6 @@ public class OperatorExample {
         System.out.println("곱: " + (x * y));
         System.out.println("몫: " + (x / y));
         System.out.println("나머지: " + (x % y));
+        System.out.println();
     }
 }
