@@ -28,6 +28,7 @@ class Order {
 public class OOPOrderManager {
     public static void main(String[] args) {
         Order order = new Order("Alice", "Book", 2, 15000);
-        order.printOrderSummary();  //윗단에 보이드 프린트오더서머리를 입력해라라 는 class선언
+        // 오더 클레스에 오더객체생성를 생성하는데 오더 생성자에 ()값을 새로 입력해라, 각오더 클릭해보면 이해
+        order.printOrderSummary();  //생성한 오더객체의 위에 프린트오더서머리 메서드를 호출 해라
     }
 }
