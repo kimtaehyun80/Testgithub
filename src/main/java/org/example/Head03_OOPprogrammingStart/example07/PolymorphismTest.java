@@ -20,11 +20,11 @@ public class PolymorphismTest {
                 100000
         };
         OrderService service = new OrderService();
-        for (Payment payment : payments) {
-            if(payment instanceof CreditCardPayment) {
-                service.processPayment(payment, paymentAmounts[0]);
+        for(Payment payment : payments) {  // Payment타입 (payment배열=반복변수), :는 ~에서, payments컬렉션(위뉴카드,계좌,크립토)순회
+            if(payment instanceof CreditCardPayment) {  // 'a instanceof b'는 상속관계 인지 참이면 실행, 거짓이면 패스
+                service.processPayment(payment, paymentAmounts[0]);  // service변수의 processPayment() 매서드호출
             } else if(payment instanceof AccountTransferPayment) {
-                service.processPayment(payment, paymentAmounts[1]);
+                service.processPayment(payment, paymentAmounts[1]);  // 매개변수는 payment객채와 paymentAmounts[]배열을 갖는다.
             } else if(payment instanceof CryptoPayment) {
                 service.processPayment(payment, paymentAmounts[2]);
             } else {
