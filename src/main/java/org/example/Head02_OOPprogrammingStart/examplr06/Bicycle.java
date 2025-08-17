@@ -1,7 +1,7 @@
 package org.example.Head02_OOPprogrammingStart.examplr06;
 
 public class Bicycle {
-    private String brand;
+    private String brand; // private은 현재 클래스에서만 접근가능, String문자열타입의 brand라는 변수(필드) 생성
     private String brake;
     private String type;
     private String wheel;
