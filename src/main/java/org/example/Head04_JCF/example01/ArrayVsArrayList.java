@@ -13,7 +13,7 @@ public class ArrayVsArrayList {
         // arr[3] = 40; // 런타임 ArrayIndexOutOfBoundsException
 
         // ArrayList 예시
-        List<Integer> list = new ArrayList<>();
+        List<Integer> list = new ArrayList<>(); //정수형 객체들을 저장할수있는 동적배열ArrayList<>생성 list변수에 할당
         list.add(10); list.add(20); list.add(30);
         list.add(40);
         System.out.println("ArrayList: " + list);
