@@ -7,12 +7,13 @@ public class UserAccount {
     public UserAccount(String accountId) {
         if (accountId == null || accountId.isBlank()) {
             throw new IllegalArgumentException("계좌 ID는 필수입니다.");
+            // 참일때 예외메소드인 IllegalArgumentException("계좌 ID는 필수입니다.")메세지 출력 실행
         }
         this.accountId = accountId;
         this.balance = 0;
     }
 
-    // 읽기 전용 메서드 (getter)
+    // 읽기 전용 메서드 (getter), 외부에서 아이디와 잔액 확인만 가능
     public String getAccountId() {
         return accountId;
     }
@@ -22,6 +23,7 @@ public class UserAccount {
     }
 
     // 쓰기 메서드: 내부 검증 포함
+    // 입금로직
     public void deposit(double amount) {
         if (amount <= 0) {
             throw new IllegalArgumentException("입금 금액은 0보다 커야 합니다.");
@@ -29,6 +31,7 @@ public class UserAccount {
         balance += amount;
     }
 
+    // 출금로직
     public void withdraw(double amount) {
         if (amount <= 0) {
             throw new IllegalArgumentException("출금 금액은 0보다 커야 합니다.");
