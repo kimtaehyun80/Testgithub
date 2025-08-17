@@ -17,7 +17,7 @@ class BusinessUser extends User {
     @Override
     public void printUserInfo() {
         super.printUserInfo();  // 부모클레스 의 printUserInfo()매소드를 호출해라
-        System.out.println("이메일: " + BusinessEmail);
-        System.out.println("회사이름: " + companyName);
+        System.out.print("이메일: " + BusinessEmail);
+        System.out.println(", 회사이름: " + companyName);
     }
 }
