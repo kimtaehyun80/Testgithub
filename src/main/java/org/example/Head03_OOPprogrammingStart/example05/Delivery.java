@@ -1,7 +1,7 @@
 package org.example.Head03_OOPprogrammingStart.example05;
 
 public class Delivery {
-    private String trackingNumber;
+    private String trackingNumber;  // 변수(필드)trackingNumber선언
     private String carrier;
 
     // Delivery생성자 생성 해서 ()값 매개변수를 갖도록 선언
