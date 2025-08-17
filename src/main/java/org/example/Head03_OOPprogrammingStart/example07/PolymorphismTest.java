@@ -6,6 +6,7 @@ import org.example.Head03_OOPprogrammingStart.example01.CreditCardPayment;
 import org.example.Head03_OOPprogrammingStart.example01.CryptoPayment;
 import org.example.Head03_OOPprogrammingStart.example01.Payment;
 
+//추상클래스 생성, 추상객체라는 개념은 없다
 public class PolymorphismTest {
     public static void main(String[] args) {
         Payment[] payments = new Payment[]
