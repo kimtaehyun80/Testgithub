@@ -8,6 +8,10 @@ public class AnonymousClassDemo {
             public void execute() {
                 System.out.println("추상 클래스의 execute() 구현부");
             }
+            @Override
+            public void start() {
+                System.out.println("Task 시작외의 결과");
+            }
         };
 
         customTask.start();
