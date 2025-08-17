@@ -8,7 +8,7 @@ public class Order  {
         // 생성자 이름은 클렉스이름(=Order)과 동일하고 반환값은 없다, AbstractPayment payment 를 매개변수로 받는 생성자(Order)이다
         // AbstractPayment타입의 payment 객체를 매개변수로 받아라
         this.payment = payment;
-        // 현재 객체에 payment필드에 외부 payment값을 할당해라
+        // 현재 클레스에 payment필드에 외부 payment값을 할당해라
     }
 
     public void process(double amount) {
