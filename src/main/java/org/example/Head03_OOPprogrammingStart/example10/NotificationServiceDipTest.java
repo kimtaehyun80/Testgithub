@@ -1,8 +1,6 @@
 package org.example.Head03_OOPprogrammingStart.example10;
 
-import org.example.Head03_OOPprogrammingStart.example01.CreditCardPayment;
-import org.example.Head03_OOPprogrammingStart.example01.CryptoPayment;
-import org.example.Head03_OOPprogrammingStart.example07.OrderService;
+
 
 
 public class NotificationServiceDipTest {
