@@ -6,7 +6,7 @@ public class EnumBasicTest {
     }
 
     public static void main(String[] args) {
-        for (Level lvl : Level.values()) {
+        for (Level lvl : Level.values()) {  // Level.values()는 Level이룸에 모든상수를 순회하는 lvl변수에 할당해라
             System.out.println(lvl + " ordinal=" + lvl.ordinal());
         }
         Level today = Level.MEDIUM;
