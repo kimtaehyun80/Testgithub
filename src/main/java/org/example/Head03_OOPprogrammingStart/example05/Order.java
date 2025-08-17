@@ -4,7 +4,7 @@ package org.example.Head03_OOPprogrammingStart.example05;
 public class Order {
     // 필드선언
     private String orderId;
-    private Delivery delivery;  // Order는 Delivery를 포함(Has-A), 컴포지션
+    private Delivery delivery;  // Order클레스가 Delivery클레스의 delivery변수를 갖는기능을 Order클레스에 포함시켜(Has-A), 컴포지션
     // 생성자 생성
     public Order(String orderId, String trackingNumber, String carrier) {
         // 생성자 이름은 클렉스이름(=Order)과 동일하고 반환값은 없다, () 를 매개변수로 받는 생성자 Order를 만든다
