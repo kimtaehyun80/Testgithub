@@ -18,7 +18,7 @@ public class ForEachVsForExample {
 
         // 향상된 for
         System.out.println("\\n=== Using enhanced for ===");
-        for (Integer num : numbers) {
+        for (Integer num : numbers) {  //향상된for(타입 변수:배열or컬렉션)문
             if (num % 2 != 0) {
                 continue;
             }
