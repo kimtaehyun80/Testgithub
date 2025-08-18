@@ -17,7 +17,7 @@ public class ArrayVsArrayList {
         list.add(10); list.add(20); list.add(30);
         list.add(40);
         System.out.println("ArrayList: " + list);
-        list.remove(Integer.valueOf(20));
+        list.remove(Integer.valueOf(20));  // Integer목록에 20번값을 리스트에서 제거해라
         System.out.println("removed 20 → " + list);
     }
 }
