@@ -3,7 +3,7 @@ package org.example.Head04_JCF.example03;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
-import java.util.stream.Stream;
+import java.util.stream.Stream;  // 스트림패키지에 스트림 클레스 사용
 
 public class FilterNumbersExample {
     public static void main(String[] args) {
