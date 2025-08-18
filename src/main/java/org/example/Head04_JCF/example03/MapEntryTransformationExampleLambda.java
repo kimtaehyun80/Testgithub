@@ -13,5 +13,6 @@ public class MapEntryTransformationExampleLambda {
         scores.entrySet().stream()
                 .map(e -> e.getKey() + ": " + e.getValue())
                 .forEach(result -> System.out.println("Student Info: " + result));
+        // .forEach 문장끝 세미콜론 ; 항상 붙는다
     }
 }
