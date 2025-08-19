@@ -9,7 +9,7 @@ public class CollectToListExample {
         List<String> data = Arrays.asList("a", "b", "c", "b");
 
         List<String> result = data.stream()
-                .distinct()
+                .distinct()  // 중복제거
                 .collect(Collectors.toList());
 
         System.out.println("Result list: " + result);
