@@ -19,7 +19,7 @@ public class MultiLevelGrouping {
         Map<String, Map<String, List<Employee>>> multiGroup =
                 emps.stream().collect(
                         Collectors.groupingBy(
-                                Employee::getPosition,
+                                Employee::getPosition, //Employee클레스의::getPosition메소드참조
                                 Collectors.groupingBy(Employee::getDepartment)
                         ));
 
