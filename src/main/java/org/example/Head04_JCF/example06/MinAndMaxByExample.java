@@ -16,6 +16,7 @@ public class MinAndMaxByExample {
                 .collect(Collectors.maxBy(Comparator.naturalOrder()));
 
         System.out.println("Lexicographically smallest fruit: " + minFruit.orElse("None"));
+        // orElse("None")는 '없으면 대체값 none로 제공하는 메소드'
         System.out.println("Lexicographically biggest fruit: " + maxFruit.orElse("None"));
     }
 }
