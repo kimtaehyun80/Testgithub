@@ -10,7 +10,7 @@ public class CollectSquareEvenExample {
 
         List<Integer> processed = numbers.stream()
                 .filter(n -> n % 2 == 0)          // 짝수 선별
-                .map(n -> n * n)                 // 제곱 변환
+                .map(n -> n * n)    // 제곱 변환(map은 다른타입,다른값변환 중간연산자
                 .distinct()                      // 중복 제거
                 .collect(Collectors.toList());   // 리스트로 수집
 
