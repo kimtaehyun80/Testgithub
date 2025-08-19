@@ -14,7 +14,7 @@ public class ReducingExample {
                         "",
                         (a, b) -> a.isEmpty() ? b : a + " - " + b
                 ));
-  //삼항연산자
+  //삼항연산자(조건? 1:2)=조건참이면1 거짓이면2 , a.isEmpty()? 는 a가 비어있으면b 아니면a를 반환
         System.out.println("Joined: " + joined);
     }
 }
